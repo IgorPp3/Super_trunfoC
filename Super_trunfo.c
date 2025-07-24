@@ -14,7 +14,7 @@ int main (){
         printf("Primeira carta: \n");
         
             printf("Digite Uma letra de 'A' a 'H' (representando um dos oito estados): \n");
-            scanf("%c", &letra1);
+            scanf("%s", &letra1);
 
             printf("Crie o código da carta usando A letra do estado seguida o 01 ao 04 (ex: A01, B03): \n");
             scanf("%s", &codigo1);
@@ -77,5 +77,5 @@ int main (){
             printf("Área: %.1f km²\n",area2);
             printf("PIB: %.1f bilhões de reais\n", pib2);
             printf("Número de Pontos Turísticos: %d\n",pontoturistico2);
-          
-}            
+    return 0;
+}
