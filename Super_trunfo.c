@@ -10,12 +10,13 @@ int main (){
     
         printf("Bem-vindo ao jogo Super trunfo \n");
         printf("Você irá cadastrar duas cartas do jogo \n");
+        printf("\n");
         printf("Primeira carta: \n");
         
             printf("Digite Uma letra de 'A' a 'H' (representando um dos oito estados): \n");
-            scanf("%s", &letra1);
+            scanf("%c", &letra1);
 
-            printf("Crie o código da carta usando A letra do estado seguida o 01 ao 04: \n");
+            printf("Crie o código da carta usando A letra do estado seguida o 01 ao 04 (ex: A01, B03): \n");
             scanf("%s", &codigo1);
             printf("Digite o nome da cidade: \n");
             scanf("%s", &cidade1);
@@ -30,15 +31,17 @@ int main (){
             scanf("%f", &pib1);
 
             printf("Digite a quantidade de pontos turísticos na cidade: \n");
-            scanf("%f", &pontoturistico1);
+            scanf("%d", &pontoturistico1);
+            printf("\n");
 
         printf("Parabéns, você concluio o cadastro da primeira carta \n");
         printf("Agora você irá cadastrar a segunda carta do jogo: \n");
+        printf("\n");
 
             printf("Digite Uma letra de 'A' a 'H' (representando um dos oito estados): \n");
             scanf("%s", &letra2);
 
-            printf("Crie o código da carta usando A letra do estado seguida o 01 ao 04: \n");
+            printf("Crie o código da carta usando A letra do estado seguida o 01 ao 04 (ex: A01, B03): \n");
             scanf("%s", &codigo2);
 
             printf("Digite o nome da cidade: \n");
@@ -62,8 +65,8 @@ int main (){
             printf("Código: %s\n",codigo1);
             printf("Nome da cidade: %s\n",letra1);
             printf("População: %d\n", habitantes1);
-            printf("Área: %.2f\n",area1);
-            printf("PIB: %.2f\n", pib1);
+            printf("Área: %.1f km²\n",area1);
+            printf("PIB: %.1f bilhões de reais\n", pib1);
             printf("Número de Pontos Turísticos: %d\n\n",pontoturistico1);
         
         printf("carta 2:\n");
@@ -71,7 +74,8 @@ int main (){
             printf("Código: %s\n",codigo2);
             printf("Nome da cidade: %s\n",letra2);
             printf("População: %d\n", habitantes2);
-            printf("Área: %.2f\n",area2);
-            printf("PIB: %.2f\n", pib2);
+            printf("Área: %.1f km²\n",area2);
+            printf("PIB: %.1f bilhões de reais\n", pib2);
             printf("Número de Pontos Turísticos: %d\n",pontoturistico2);
+          
 }            
